@@ -12,46 +12,164 @@ img {
     max-width: 100%;
 }
 
-header {
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
     background-color: #1f2937;
-    color: #f9faf8;
+}
+
+header {
     display: flex;
-    justify-content: space-evenly;
+    width: 80%;
     align-items: center;
+    margin: 0 auto;
 }
 
 .logo {
-    max-width: 5%;
-    height: auto;
+    flex: 1;
+}
+
+.logo img {
+    width: 200px;
 }
 
 .menu {
     display: flex;
-    gap: 1.4rem;
+    gap: 16px;
+    color: white;
 }
 
 ul {
     list-style-type: none;
 }
 
+h2 {
+    font-size: 2.5rem;
+}
+
 .section-one {
-    background-color: #1f2937;
-    color: #f9faf8;
-}
-
-.content-one {
     display: flex;
-    justify-content: center;
-    padding: 1.4rem;
+    align-items: center;
+    margin: 0 auto;
+    width: 80%;
+    column-gap: 2.5rem;
+    color: white;
 }
 
-.section-one-left,
-.section-one-right {
+.spacer {
+    padding-bottom: 2rem;
+}
+
+.section-one-left {
     flex: 1;
 }
 
-.section-one-right img {
-    width: 50%;
-    
+.section-one-left p {
+    max-width: 500px;
 }
 
+.section-one-right {
+    flex: 1;
+    padding: 7rem 0;
+}
+
+button {
+    padding: 1rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    border-radius: 12px;
+    font-size: 1rem;
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;
+    background-color: transparent;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+/* Second section starts here */
+
+.section-two {
+    text-align: center;
+    margin: 3rem 0;
+}
+
+.section-two h2 {
+    padding-bottom: 2rem;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+    height: auto;
+    gap: 1rem;
+}
+
+/* third section start here */
+
+.main-section-three {
+    background-color: #e5e7eb;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.section-three {
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+.three-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-three strong {
+    align-self: flex-end;
+}
+
+.section-three h2 {
+    font-weight: 100;
+    padding: 0.5rem;
+    font-style: italic;
+    font-size: 2rem;
+}
+
+.section-four {
+    width: 50%;
+    margin: 0 auto;
+    padding: 3rem;
+    background-color: #3882f6;
+    border-radius: 20px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+.cta-card {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #1f2937;
+    color: white;
+}
